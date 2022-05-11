@@ -1,0 +1,10 @@
+
+    "sources": [
+        "scss/style.scss",
+        "scss/_variables.scss",
+        "scss/_nav.scss",
+        "scss/_footer.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
