@@ -1,7 +1,10 @@
 @import"_variables";
+@import"_mixins";
 @import"_nav";
 @import"_footer";
 @import"_card";
+
+
 
 
 body {
@@ -91,17 +94,17 @@ nav {
 }
 
 aside h5 {
-  color: #383636;
-  margin-top: 50px;
-  font-family: "Source Code Pro", monospace;
+  margin-top:map-get($txt-home-tarj,margen-arriba);
+  color:map-get($txt-home-tarj ,color-fuente );
+  font-family: $TipografiaPrimaria ;
   font-weight: 700;
   text-shadow: #5e5e5e 5px 1px 20px;
 }
 
 .descripcion {
-  color: #383636;
-  margin-top: 30px;
-  font-family: "Roboto Condensed", sans-serif;
+  color:map-get($txt-home-tarj, color-fuente );
+  margin-top:map-get($txt-home-tarj,margen-arriba);
+  font-family:$TipografiaSecundaria;
   font-size: 16px;
   font-weight: 500;
 }
@@ -162,13 +165,14 @@ footer li a:hover {
   margin-top: 50px;
 }
 
+
+  
+
 .newsletter h4 {
-  font-family: "Tangerine", monospace;
-  text-align: center;
-  font-size: 60px;
+  @include propiedadesPrincipal(Tangerine monospace,center ,12px,white) ;
   font-weight: 500;
-  color: white;
 }
+  
 
 .newsletter h5 {
   padding-top: 15px;

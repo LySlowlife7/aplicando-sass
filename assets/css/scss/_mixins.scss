@@ -1,0 +1,6 @@
+@mixin propiedadesPrincipal($fuenteletra,$textcenter,$fontsize,$color) {
+    font-family:$fuenteletra;
+    text-align:$textcenter;
+    font-size: $fontsize;
+    color:$color;
+  }
